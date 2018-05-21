@@ -212,7 +212,7 @@ public void animal_shelter() {
 
 }
 
-# Problem 3.1
+# Problem 3.1 Three in One
 """
 I: Describe how you could use a single array to implement 3 stacks
 D: Find a way to implement 3 stacks using an array without writing code. 
