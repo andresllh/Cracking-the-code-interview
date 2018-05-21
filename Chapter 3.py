@@ -212,10 +212,20 @@ public void animal_shelter() {
 
 }
 
-# Problem
+# Problem 3.1
 """
-I: 
-D: 
-E/A: 
-L: 
+I: Describe how you could use a single array to implement 3 stacks
+D: Find a way to implement 3 stacks using an array without writing code. 
+E/A: Did not use all of Duke's 7 steps. For this problem, no code was required to be written. The way that I came up with to 
+	 accomplish this task was to keep track of the indeces in the array. This array would have to large enough so that indeces do
+	 not overlap at any single operation. The array would be divided into 3 sections for each stack. Each stack will have a pointer
+	 to its first and last element. Whenever push is called the new item will be inserted at the [last_index + 1] position in the 
+	 array for its specific stack. The last_index will be updated to the new item, which is the one that gets returned when pop is
+	 called. When pop is called last_index will be reduced by 1 and the item that was in the last_index position gets returned. For
+	 the peek method, the item at last_index will be returned, but the last_index variable will not be updated. For the isEmpty method
+	 the first and last index will be compared, and if they are equal, then the stack is in fact empty. There would also be a need to 
+	 check if any indexes between stacks overlap, which would mean that they got corrupted, and will no longer functions. 
+L: For this problem I learnt how to design my algorithm without writing any code by simply thinking about test cases and thinking
+   about how I could implement this. While I did not use Duke's 7 steps, I treated this problem like if it were a conversation between
+   two programmers that are discussing a hypothetical situatiion and trying to come up with a solution in this manner. 
 """
